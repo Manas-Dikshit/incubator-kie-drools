@@ -32,7 +32,7 @@ import DRL6Expressions, JavaParser;
      *           |  query
      *           ;
      */
-compilationUnit : packagedef? unitdef? drlStatementdef* EOF ;
+compilationUnit : (packagedef unitdef?)? drlStatementdef* EOF ;
 
 drlStatementdef
     : importdef SEMI?
